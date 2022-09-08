@@ -216,7 +216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1800288043}
-  - component: {fileID: 1800288042}
+  - component: {fileID: 1800288044}
   m_Layer: 0
   m_Name: TankSpawner
   m_TagString: Untagged
@@ -224,19 +224,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1800288042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800288041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b624bab44bec6428af6ecf0b735829, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tankView: {fileID: -8499622780163305353, guid: 355306f546993d545b0683853313c327, type: 3}
 --- !u!4 &1800288043
 Transform:
   m_ObjectHideFlags: 0
@@ -252,6 +239,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1800288044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800288041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b624bab44bec6428af6ecf0b735829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tankView: {fileID: -8499622780163305353, guid: 355306f546993d545b0683853313c327, type: 3}
+  TankList:
+  - tankType: 0
+    movementSpeed: 30
+    rotationSpeed: 75
+    color: {fileID: 2100000, guid: c39933e60e73205419d1f79a2af1fdac, type: 2}
+  - tankType: 1
+    movementSpeed: 10
+    rotationSpeed: 50
+    color: {fileID: 2100000, guid: ff21ff0ea9b18924bb1fdfbb0e58f5cb, type: 2}
+  - tankType: 2
+    movementSpeed: 60
+    rotationSpeed: 120
+    color: {fileID: 2100000, guid: 463052f3f7389124f9e7b34b0b931d0d, type: 2}
 --- !u!1001 &1805823116
 PrefabInstance:
   m_ObjectHideFlags: 0

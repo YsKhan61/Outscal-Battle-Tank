@@ -5,6 +5,7 @@ using UnityEngine;
 public class TankView : MonoBehaviour
 {
     public Rigidbody rb;
+    public MeshRenderer[] childs;
 
     private TankController tankController;
 
@@ -45,4 +46,11 @@ public class TankView : MonoBehaviour
         return rb;
     }
 
+    public void ChangeColor(Material color)
+    {
+        for(int i = 0; i < childs.Length; i++)
+        {
+            childs[i].material = color;
+        }
+    }
 }
